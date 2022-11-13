@@ -20,9 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix:
-        targetPlatform:
-          - Android
+      
     steps:
     
       - name: Checkout
@@ -37,7 +35,7 @@ jobs:
       - uses: game-ci/unity-builder@v2.1.2
         with:
           buildName: ${{ env.APP_NAME }}
-          targetPlatform: ${{ matrix.targetPlatform }}
+          targetPlatform: Android 
           
       - uses: actions/upload-artifact@v2
         with:
