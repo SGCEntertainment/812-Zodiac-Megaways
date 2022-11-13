@@ -16,7 +16,7 @@ env:
 jobs:
         
   buildAndroidAPK:
-    name: Build ${{ env.APP_NAME }}.apk
+    name: Build asd
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
